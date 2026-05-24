@@ -128,8 +128,38 @@
     66% { transform: translate(-20px, 20px) scale(0.9); }
     100% { transform: translate(0px, 0px) scale(1); }
   }
+  @keyframes aurora-1 {
+    0% { transform: translate(0, 0); opacity: 0.05; }
+    50% { transform: translate(5%, 5%); opacity: 0.08; }
+    100% { transform: translate(0, 0); opacity: 0.05; }
+  }
+  @keyframes aurora-2 {
+    0% { transform: translate(0, 0); opacity: 0.03; }
+    50% { transform: translate(-5%, -5%); opacity: 0.05; }
+    100% { transform: translate(0, 0); opacity: 0.03; }
+  }
+  @keyframes scan-line {
+    0% { transform: translate(-100%, -100%); }
+    100% { transform: translate(100%, 100%); }
+  }
+  @keyframes pulse-shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
   .animate-blob {
     animation: blob infinite alternate ease-in-out;
+  }
+  .animate-aurora-1 {
+    animation: aurora-1 40s infinite ease-in-out;
+  }
+  .animate-aurora-2 {
+    animation: aurora-2 50s infinite ease-in-out;
+  }
+  .animate-scan-line {
+    animation: scan-line 20s infinite linear;
+  }
+  .animate-shimmer {
+    animation: pulse-shimmer 3s infinite ease-in-out;
   }
   .animation-delay-2000 {
     animation-delay: 2s;

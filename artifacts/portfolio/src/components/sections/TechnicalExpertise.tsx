@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Zap, Activity, Box, Battery, Settings, CheckSquare, MapPin, ClipboardCheck, FileText } from "lucide-react";
+import { Zap, Activity, Box, Battery, Settings, CheckSquare, MapPin, ClipboardCheck, FileText, ChevronRight, ChevronDown } from "lucide-react";
 
 const expertise = [
   { icon: Zap, title: "Electrical Power Distribution (MV/LV)", desc: "End-to-end design and execution of power systems." },
@@ -11,6 +11,15 @@ const expertise = [
   { icon: MapPin, title: "Site Execution & Go-Live Readiness", desc: "Managing contractors and timelines for zero-delay launches." },
   { icon: ClipboardCheck, title: "SAT/FAT Support", desc: "Factory and Site Acceptance Testing coordination." },
   { icon: FileText, title: "BOQ & Technical Review", desc: "Bill of Quantities validation and cost control." },
+];
+
+const flowSteps = [
+  { icon: Zap, label: "MV Power" },
+  { icon: Box, label: "Transformer" },
+  { icon: Battery, label: "ATS/AMF" },
+  { icon: Activity, label: "Distribution Panel" },
+  { icon: MapPin, label: "Low Voltage" },
+  { icon: Settings, label: "Automation/Conveyor" }
 ];
 
 export function TechnicalExpertise() {
@@ -29,6 +38,40 @@ export function TechnicalExpertise() {
           </p>
         </motion.div>
 
+        {/* Infrastructure Flow Visualization */}
+        <motion.div 
+          className="mb-20 overflow-hidden relative rounded-2xl p-6 md:p-8 bg-[#111827]/80 backdrop-blur-sm border border-white/5"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          data-testid="infrastructure-flow"
+        >
+          {/* Shimmer pulse effect */}
+          <div className="absolute inset-0 pointer-events-none opacity-20">
+            <div className="absolute top-0 bottom-0 w-1/3 bg-gradient-to-r from-transparent via-[#0ea5e9] to-transparent animate-shimmer" />
+          </div>
+
+          <h3 className="text-sm font-mono text-[#94a3b8] uppercase tracking-wider mb-8 text-center md:text-left">Infrastructure Delivery Flow</h3>
+          
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-2">
+            {flowSteps.map((step, i) => (
+              <div key={i} className="flex flex-col md:flex-row items-center gap-4 md:gap-2 w-full md:w-auto">
+                <div className="flex flex-col items-center justify-center p-4 w-full md:w-36 h-28 rounded-xl bg-white/[0.02] border border-white/5 hover:border-[#0ea5e9]/30 hover:bg-white/[0.04] transition-all z-10 group">
+                  <step.icon className="w-8 h-8 text-[#0ea5e9] mb-3 group-hover:scale-110 transition-transform" />
+                  <span className="text-xs font-semibold text-center text-white/80">{step.label}</span>
+                </div>
+                {i < flowSteps.length - 1 && (
+                  <div className="text-white/20 my-2 md:my-0">
+                    <ChevronRight className="w-6 h-6 hidden md:block" />
+                    <ChevronDown className="w-6 h-6 block md:hidden" />
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Expertise Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {expertise.map((item, i) => (
             <motion.div
