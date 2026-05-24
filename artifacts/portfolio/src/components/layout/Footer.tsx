@@ -14,9 +14,8 @@ export function Footer() {
           </p>
           
           <div className="flex items-center gap-6 text-sm font-medium text-muted-foreground">
-            <a href="#" className="hover:text-foreground transition-colors">LinkedIn</a>
-            <a href="#" className="hover:text-foreground transition-colors">GitHub</a>
-            <a href="mailto:hello@example.com" className="hover:text-foreground transition-colors">Email</a>
+            <a href="https://linkedin.com/in/baguspray" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors" data-testid="footer-link-linkedin">LinkedIn</a>
+            <a href="mailto:bapray66@gmail.com" className="hover:text-foreground transition-colors" data-testid="footer-link-email">bapray66@gmail.com</a>
           </div>
         </div>
       </div>
