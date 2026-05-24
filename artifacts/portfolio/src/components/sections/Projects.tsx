@@ -63,9 +63,9 @@ export function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <h2 className="text-3xl md:text-5xl font-bold font-display mb-6 text-white">Operational Rollout Portfolio</h2>
+          <h2 className="text-3xl md:text-5xl font-bold font-display mb-6 text-white">Project Execution Portfolio</h2>
           <p className="text-xl text-[#94a3b8] max-w-2xl">
-            Operational tools built in the field to solve real coordination problems — distributed teams, live data, zero margin for error.
+            A record of large-scale infrastructure programs delivered at speed and at scale — directing cross-functional teams, managing vendors, and driving site readiness from first concept to full operation.
           </p>
         </motion.div>
 
