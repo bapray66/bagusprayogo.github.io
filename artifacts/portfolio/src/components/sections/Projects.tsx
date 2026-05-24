@@ -55,16 +55,16 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-24 md:py-32" data-testid="section-projects">
-      <div className="container mx-auto px-6">
+    <section id="projects" className="py-24 md:py-32 relative" data-testid="section-projects">
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           className="mb-16 md:mb-24"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <h2 className="text-3xl md:text-5xl font-bold font-display mb-6">Selected Work</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl">
+          <h2 className="text-3xl md:text-5xl font-bold font-display mb-6 text-white">Operational Rollout Portfolio</h2>
+          <p className="text-xl text-[#94a3b8] max-w-2xl">
             Operational tools built in the field to solve real coordination problems — distributed teams, live data, zero margin for error.
           </p>
         </motion.div>
@@ -73,60 +73,61 @@ export function Projects() {
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
-              className={`group relative flex flex-col rounded-2xl bg-card border border-border overflow-hidden hover:border-primary/60 hover:shadow-lg transition-all duration-300 ${
+              className={`group relative flex flex-col rounded-2xl bg-[#111827]/80 backdrop-blur-sm border border-white/5 overflow-hidden hover:border-[#0ea5e9]/50 hover:shadow-[0_10px_40px_rgba(14,165,233,0.15)] transition-all duration-500 ${
                 project.featured ? "lg:col-span-2" : ""
               }`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ delay: index * 0.1, duration: 0.5 }}
+              transition={{ delay: index * 0.1, duration: 0.6 }}
               data-testid={`card-project-${project.id}`}
             >
               {/* Project screenshot */}
-              <div className={`relative w-full overflow-hidden border-b border-border ${project.featured ? "max-h-[460px]" : "max-h-[240px]"}`}>
+              <div className={`relative w-full overflow-hidden border-b border-white/5 bg-[#0a0f1e] ${project.featured ? "max-h-[500px]" : "max-h-[280px]"}`}>
+                <div className="absolute inset-0 bg-[#0ea5e9]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 mix-blend-overlay"></div>
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-500"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
                   data-testid={`img-project-${project.id}`}
                 />
               </div>
 
-              <div className="relative z-10 p-8 flex flex-col flex-1">
+              <div className="relative z-20 p-8 md:p-10 flex flex-col flex-1">
                 {project.featured && (
-                  <div className="mb-3 inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary uppercase tracking-wider w-fit">
+                  <div className="mb-4 inline-flex items-center rounded-full border border-[#0ea5e9]/30 bg-[#0ea5e9]/10 px-4 py-1.5 text-xs font-bold text-[#67e8f9] uppercase tracking-wider w-fit shadow-[0_0_15px_rgba(14,165,233,0.2)]">
                     Highlighted Project
                   </div>
                 )}
 
-                <h3 className="text-xl md:text-2xl font-bold font-display text-foreground mb-1 group-hover:text-primary transition-colors">
+                <h3 className="text-2xl md:text-3xl font-bold font-display text-white mb-2 group-hover:text-[#67e8f9] transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-sm font-mono text-primary mb-1">{project.subtitle}</p>
-                <p className="text-sm text-muted-foreground italic mb-4">Role: {project.role}</p>
+                <p className="text-sm font-mono text-[#0ea5e9] mb-2">{project.subtitle}</p>
+                <p className="text-sm text-[#94a3b8] italic mb-6">Role: {project.role}</p>
 
-                <p className="text-muted-foreground leading-relaxed mb-6 text-base">
+                <p className="text-[#94a3b8] leading-relaxed mb-8 text-base md:text-lg">
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-8">
                   {project.tags.map((tag) => (
                     <Badge
                       key={tag}
                       variant="secondary"
-                      className="font-mono text-xs"
+                      className="font-mono text-xs bg-white/5 hover:bg-white/10 text-[#94a3b8] border-none px-3 py-1"
                     >
                       {tag}
                     </Badge>
                   ))}
                 </div>
 
-                <div className="mt-auto pt-5 border-t border-border">
+                <div className="mt-auto pt-6 border-t border-white/5">
                   <a
                     href="https://linkedin.com/in/baguspray"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center font-semibold text-foreground hover:text-primary transition-colors"
+                    className="inline-flex items-center font-semibold text-white hover:text-[#0ea5e9] transition-colors"
                     data-testid={`link-project-${project.id}`}
                   >
                     View on LinkedIn

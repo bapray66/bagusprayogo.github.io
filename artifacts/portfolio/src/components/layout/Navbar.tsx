@@ -32,6 +32,7 @@ export function Navbar() {
 
   const navLinks = [
     { name: "Portfolio", id: "projects" },
+    { name: "Expertise", id: "expertise" },
     { name: "About Me", id: "about" },
     { name: "Contact", id: "contact" },
   ];
@@ -39,7 +40,7 @@ export function Navbar() {
   return (
     <motion.header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/80 backdrop-blur-md border-b border-border shadow-sm py-4" : "bg-transparent py-6"
+        isScrolled ? "bg-[#0a0f1e]/80 backdrop-blur-md border-b border-white/5 shadow-[0_4px_30px_rgba(0,0,0,0.1)] py-4" : "bg-transparent py-6"
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}

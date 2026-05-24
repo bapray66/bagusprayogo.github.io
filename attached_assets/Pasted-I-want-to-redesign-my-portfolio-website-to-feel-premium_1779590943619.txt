@@ -1,0 +1,221 @@
+I want to redesign my portfolio website to feel premium, strategic, and executive-level — similar to modern PMO / infrastructure leadership portfolios, not a spreadsheet or internal dashboard tool showcase.
+
+The current portfolio already has good content, but the first impression is not strong enough and does not properly reflect the scale of my experience.
+
+My actual value is:
+
+* Nationwide infrastructure expansion
+* Multi-site operational rollout
+* Electrical engineering expertise
+* Automation & conveyor project experience
+* High-speed project execution
+* Technical + operational leadership
+* Project ownership and execution control
+
+The portfolio should immediately make recruiters think:
+“This person has led large-scale infrastructure and operational expansion projects.”
+
+==================================================
+OVERALL DESIGN DIRECTION
+========================
+
+Style:
+
+* Premium corporate
+* Executive / PMO / infrastructure leadership aesthetic
+* Modern and clean
+* Minimal but impactful
+* Strategic presentation style
+* Similar to consulting / infrastructure project portfolios
+* NOT startup playful
+* NOT spreadsheet-centric
+* NOT generic template feeling
+
+Visual Feel:
+
+* Dark modern UI with subtle gradients
+* Smooth animated background
+* Premium motion effects
+* Glassmorphism elements are acceptable but keep professional
+* High-end dashboard aesthetic
+* Strong typography hierarchy
+* Balanced white space
+* Modern enterprise feeling
+
+Color Palette:
+
+* Dark charcoal / deep navy background
+* Electric blue accents
+* Soft cyan highlights
+* White typography
+* Grey supporting text
+* Completed status should use black/dark grey instead of blue
+
+Animated Background:
+Create subtle animated background effects such as:
+
+* Moving gradient glow
+* Floating particles/grid
+* Slow animated blueprint lines
+* Soft moving infrastructure/network lines
+* Motion should feel premium and smooth
+* Avoid excessive animation
+* Keep performance optimized
+
+==================================================
+FIRST PAGE / HERO SECTION
+=========================
+
+The first page should be highly impactful.
+
+Main Headline:
+“Bagus Prayogo”
+
+Subheadline:
+“Infrastructure & Expansion Project Lead”
+
+Supporting Text:
+“Experienced in nationwide infrastructure expansion, electrical systems, automation projects, and operational rollout management across Indonesia.”
+
+Add 4 strong KPI cards / metrics:
+
+* 55 Operational Sites Delivered
+* 100+ Concurrent Site Monitoring
+* 300% Deployment Target Achievement
+* Nationwide Multi-Site Rollout
+
+The hero section should immediately communicate:
+
+* scale
+* ownership
+* execution capability
+* leadership
+* technical depth
+
+Add subtle animated counters or glow effects for metrics.
+
+==================================================
+DASHBOARD SECTION
+=================
+
+The dashboard/tracker should remain in the portfolio because it proves operational control capability.
+
+BUT:
+The dashboard must become supporting evidence, NOT the main identity.
+
+Rename the section into something more strategic such as:
+
+* “Operational Rollout Monitoring System”
+  or
+* “Expansion Execution Control Dashboard”
+
+Remove unnecessary labels/categories:
+
+* BQ
+* PR
+* FO
+* FO IT
+* NFO
+* MEP
+
+Make dashboard cleaner and more enterprise-looking.
+
+Improve:
+
+* spacing
+* typography
+* hierarchy
+* modern table styling
+* cleaner status badges
+
+Status Colors:
+
+* Completed = dark grey / black
+* Ongoing = blue
+* Delayed/Aging = orange/red
+* Pending = grey
+
+Add subtle modern dashboard animations:
+
+* fade-in
+* hover glow
+* loading transitions
+* smooth table movement
+
+==================================================
+TECHNICAL EXPERTISE SECTION
+===========================
+
+Add a premium “Technical Expertise” section with icons/cards.
+
+Include:
+
+* Electrical Power Distribution (MV/LV)
+* Cable Sizing & Load Calculation
+* Transformer & Cubicle Systems
+* Capacitor Bank & ATS/AMF
+* Automation & Conveyor Projects
+* Technical Validation & Commissioning
+* Site Execution & Go-Live Readiness
+* SAT/FAT Support
+* BOQ & Technical Review
+
+This section should look modern and premium, not like a CV bullet list.
+
+==================================================
+PROJECT EXPERIENCE SECTION
+==========================
+
+Create a cleaner project experience timeline.
+
+Focus on achievements and scale.
+
+Key highlights:
+
+* Delivered 55 operational sites within 3 quarters
+* Managed nationwide expansion projects
+* 100+ concurrent site execution
+* Led operational rollout programs
+* Coordinated engineering, operations, vendors, and stakeholders
+* Worked on automation and conveyor infrastructure
+
+Use modern timeline/cards with subtle motion.
+
+==================================================
+TYPOGRAPHY
+==========
+
+Typography should feel premium and confident.
+
+Use:
+
+* Bold modern headline fonts
+* Clean readable body fonts
+* Strong spacing hierarchy
+* Large impactful section titles
+
+The website should feel like:
+
+* infrastructure leadership portfolio
+* enterprise project manager portfolio
+* strategic operations executive profile
+
+NOT:
+
+* generic engineer portfolio
+* spreadsheet tool showcase
+* junior dashboard project
+
+==================================================
+FINAL GOAL
+==========
+
+The portfolio should position me as:
+
+* Infrastructure Project Lead
+* Expansion Project Manager
+* Technical Operations Leader
+* Strategic Execution Manager
+
+The website should feel:
+high-impact, modern, scalable, technical, operational, and executive-level.
