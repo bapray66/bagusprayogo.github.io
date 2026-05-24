@@ -31,10 +31,8 @@ export function Navbar() {
   };
 
   const navLinks = [
-    { name: "About", id: "about" },
-    { name: "Skills", id: "skills" },
-    { name: "Experience", id: "experience" },
-    { name: "Projects", id: "projects" },
+    { name: "Portfolio", id: "projects" },
+    { name: "About Me", id: "about" },
     { name: "Contact", id: "contact" },
   ];
 
@@ -69,12 +67,12 @@ export function Navbar() {
               {link.name}
             </button>
           ))}
-          <Button 
-            onClick={() => scrollTo("projects")}
+          <Button
+            onClick={() => scrollTo("contact")}
             className="rounded-full px-6 font-semibold"
             data-testid="button-nav-cta"
           >
-            View Work
+            Get in Touch
           </Button>
         </nav>
 

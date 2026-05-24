@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Mail, Linkedin, MapPin, Phone, User } from "lucide-react";
+import { Mail, Linkedin, MapPin, Phone } from "lucide-react";
+import profilePhoto from "@assets/bagus_profile.jpg";
 
 const contactItems = [
   {
@@ -54,13 +55,14 @@ export function Contact() {
             transition={{ duration: 0.5 }}
           >
             <div
-              className="w-56 h-56 rounded-full border-4 border-primary/20 shadow-xl overflow-hidden bg-secondary flex items-center justify-center mb-6"
+              className="w-56 h-56 rounded-full border-4 border-primary/20 shadow-xl overflow-hidden bg-secondary"
               data-testid="img-profile-photo"
             >
-              <div className="flex flex-col items-center gap-2 text-muted-foreground">
-                <User className="h-16 w-16 opacity-30" />
-                <span className="text-xs font-mono opacity-50">Photo coming soon</span>
-              </div>
+              <img
+                src={profilePhoto}
+                alt="Bagus Prayogo"
+                className="w-full h-full object-cover object-top"
+              />
             </div>
             <h3 className="text-2xl font-bold font-display text-foreground mb-1">Bagus Prayogo</h3>
             <p className="text-primary font-semibold font-mono text-sm uppercase tracking-wider">Project Lead · ByteDance</p>
